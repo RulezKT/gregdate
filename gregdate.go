@@ -2,16 +2,16 @@ package gregdate
 
 import "fmt"
 
-type GregDate struct {
-	Year    int `json:"Year"`
-	Month   int `json:"Month"`
-	Day     int `json:"Day"`
-	Hour    int
-	Minutes int
-	Seconds int
+type Date struct {
+	Year    int `json:"year"`
+	Month   int `json:"month"`
+	Day     int `json:"day"`
+	Hour    int `json:"hour"`
+	Minutes int `json:"minutes"`
+	Seconds int `json:"seconds"`
 }
 
-func (gd GregDate) String() string {
+func (gd Date) String() string {
 
 	var monthsFormatted string
 	if gd.Month > 9 {
