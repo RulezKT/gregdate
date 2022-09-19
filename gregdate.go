@@ -2,6 +2,7 @@ package gregdate
 
 import "fmt"
 
+// simple Date structure
 type Date struct {
 	Year    int `json:"year"`
 	Month   int `json:"month"`
